@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LuvLtr New Ltr</title>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+</head>
+<body>
+
+<!--Second day:
+	Second Page:
+		Create new letter page
+•	Header stays the same
+•	Main contains form
+o	To Address
+o	From Address
+o	HEADING: Includes the address and the date. 
+o	GREETING: 
+o	BODY: Indent for each new paragraph.
+o	CLOSING: capitalized expression followed by a comma
+o	SIGNATURE: type in name. make option to have electronic signature with finger, etc
+First Page:
+	Link new letter page. 
+-->
+
+<header>
+	<h1 id="logo">LuvLtr</h1>
+
+
+	<nav id="mainNav">
+		<ul>
+			<li>
+				<a href="#">About</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+
+	<div class="row">
+	<form class="newLtrForm" action="/some-server-endpoint" method='post'>
+		<fieldset name="ltr_to_info">
+		<h3 class="formFieldHeadings">Who is the letter going to?</h3>
+			<label for="to-first-name" required>First Name</label>
+			<input placeholder='First Name' type="text" name='to-first-name' id='to-first-name' required/>
+
+			<label for="to-last-name" required>Last Name</label>
+			<input placeholder='Last Name' type="text" name='to-last-name' id='to-last-name' required/>
+
+			<label for="to-address-line-1" required>Address Line 1</label>
+			<input placeholder='Address' type="text" name='to-address-line-1' id='to-address-line-1' required/>
+
+			<label for="to-address-line-2" required>Address Line 2</label>
+			<input placeholder='Address' type="text" name='to-address-line-2' id='to-address-line-2' required/>
+
+			<!--<label for="to-city">City</label>
+			<input placeholder='City' type="text" name='to-city' id='to-city' />
+
+			<label for="to-state">State</label>
+
+
+			<label for="to-zip">Zip</label>
+
+
+		</fieldset>
+		<fieldset name="ltr_from_info">
+		<h3 class="formFieldHeadings">Who is the letter comming from?</h3>
+			<label for="from-first-name"></label>
+			<label for="from-last-name"></label>
+			<label for="from-address-line-1"></label>
+			<label for="from-address-line-2"></label>
+			<label for="from-city"></label>
+			<label for="from-state"></label>
+			<label for="from-zip"></label>
+		</fieldset>
+		<fieldset name="ltr">
+		<h3 class="formFieldHeadings">Let's write your letter!</h3>
+
+		</fieldset>
+		<fieldset name="signature">
+		<h3 class="formFieldHeadings">Signature</h3>
+
+		</fieldset>-->
+	</form>
+		
+	</div>
+
+</main>
+
+</body>
+</html>

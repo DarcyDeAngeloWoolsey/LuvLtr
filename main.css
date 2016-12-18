@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*first page css until project becomes more complex
+Built for mobile-first with responsive potential based on viewport size*/
+
+header {
+	width: 100%;
+	margin-bottom: 2%;
+	border-bottom: 3px solid #892EE4;
+}
+
+#logo, #mainNav, #newLtr, #fnLtr, #newLtr img, #fnLtr img {
+	/*make the width of these elements smaller than the parent element of header so they can be centered. Number of pixels or em for smaller screens works, 
+	respond up for larger screens with media queries*/
+	/*width: 250px;*/
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1#logo, #mainNav ul li, #newLtr p, #fnLtr p {
+	text-align: center;
+}
+
+h1#logo {
+	font-size: 5em;
+	color: #892EE4;
+	
+}
+
+#mainNav ul li a{
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 2.0em;
+	color: #555555;
+}
+
+
+
+#newLtr p, #fnLtr p {
+	font-size: 2.5em;
+}
+
+#newLtr img, #fnLtr img {
+	display: block;
+	width: 50px;
+}
+
+#newLtr_border {
+	background-color: #3923D6;
+	width: 200px;
+	margin: auto;
+}
+
+#fnLtr_border {
+	background-color: #2966B8;
+	width: 200px;
+	margin: auto;
+}
+
+#newLtr_border, #fnLtr_border {
+	padding: 10px;
+}
+
+#newLtr_border:hover, #fnLtr_border:hover, #mainNav ul li a:hover {
+	opacity: .5;
+}
+
+
+#newLtr > a, #fnLtr > a {
+	text-decoration: none;
+	color: white;
+}
+
+h3.formFieldHeadings {
+	font-size: 2.0em;
+	margin-bottom: 20px;
+}
+
+label, input {
+	display: block;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input {
+	margin-bottom: 20px;
+	width: 40%
+}
